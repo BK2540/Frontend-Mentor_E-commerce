@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <div class="nav_left">
+        <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+        <div class="menu">
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav_right">
+        <button class="cart">
+          <img src="./images/icon-cart.svg" alt="cart">
+        </button>
+        
+        <div class="user">
+          <img src="./images/image-avatar.png" alt="profile">
+        </div>
+      </div>      
+    </div>
+
+    <div class="content">
+      <div class="content_left"> 
+        <div class="main_img" id="showModal">
+          <img src="./images/image-product-1.jpg" alt="product">
+        </div> 
+
+        <div class="image_show">
+          <img src="./images/image-product-1.jpg" alt="product" class="img hover">
+          <img src="./images/image-product-2.jpg" alt="product" class="img hover">
+          <img src="./images/image-product-3.jpg" alt="product" class="img hover">
+          <img src="./images/image-product-4.jpg" alt="product" class="img hover">
+        </div>
+      </div>
+
+      <div class="content_right">
+        <p class="company">Sneaker Company</p>
+
+        <h1 class="title">Fall Limited Edition Sneakers</h1> 
+        <span class="desc">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </span>
+      
+        <div class="price_wrapper">
+          <div class="current_price">
+            <h3 class="price">$125.00</h3>
+            <span class="discount">50%</span> 
+          </div>
+          <p class="prev_price">$250.00</p>
+        </div>       
+        
+        
+        <div class="buy">
+          <div class="process">
+            <img src="./images/icon-minus.svg" alt="minus" class="sign">            
+            <span class="number"> 0</span>
+            <img src="./images/icon-plus.svg" alt="plus" class="sign">
+          </div>
+            <button class="add">
+              <img src="./images/icon-cart.svg" alt="cart">
+              Add to cart
+            </button>
+        </div> 
+       
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal_container">
+        <div class="top">
+          <div class="close">
+            <img src="./images/icon-close.svg" alt="close">
+          </div>
+          <img src="./images/icon-previous.svg" alt="arrow" class="arrow left">
+          <div class="frame">
+            <div class="slider">
+              <img src="./images/image-product-1.jpg" alt="image" class="image">
+              <img src="./images/image-product-2.jpg" alt="image" class="image">
+              <img src="./images/image-product-3.jpg" alt="image" class="image">
+              <img src="./images/image-product-4.jpg" alt="image" class="image">
+            </div>
+          </div>
+          <img src="./images/icon-next.svg" alt="arrow" class="arrow right">
+        </div>
+        <div class="bottom">
+          <img src="./images/image-product-1.jpg" alt="product" class="img hover">
+          <img src="./images/image-product-2.jpg" alt="product" class="img hover">
+          <img src="./images/image-product-3.jpg" alt="product" class="img hover">
+          <img src="./images/image-product-4.jpg" alt="product" class="img hover">
+        </div>
+      </div>
+    </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
